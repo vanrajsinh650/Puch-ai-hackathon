@@ -102,8 +102,8 @@ async def video_summarizer(
     except Exception as e:
         import traceback
         err = traceback.format_exc()
-        print(f"🚨 ERROR in video_summarizer: {err}")
-        return f"❌ Tool failed: {e}"
+        print(f"ERROR in video_summarizer: {err}")
+        return f"Tool failed: {e}"
 
 
 @mcp.tool
